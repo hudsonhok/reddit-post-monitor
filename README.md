@@ -9,8 +9,8 @@ This script scrapes the newest post from the r/hardwareswap subreddit based on a
 
 ## Prerequisites
 Before running the script, ensure you have the following:
-
-* Python 3.6 or higher installed on your machine.
+* Windows OS
+* Python 3.6 or higher installed on your machine
 * PRAW library installed. You can install it via pip:
 `pip install praw`
 
@@ -18,10 +18,19 @@ Before running the script, ensure you have the following:
 
 1. Reddit API Credentials
     * Create a Reddit account if you don't have one.
-    * Go to Reddit's app preferences and create a new application
-    * Select "script" as the application type
-    * Click "create app"
-    * Note the 'client_id' and 'client_secret' values
+    * Go to Reddit's app preferences and create a new application.
+    * Select "script" as the application type.
+    * Click "create app".
+    * Note the 'client_id' and 'client_secret' values.
 
 2. Clone the repository
 `git clone https://github.com/hudsonhok/reddit_post_monitor.git`
+
+3. Change subreddit and/or keywords
+    * Customize the keywords you're looking for within the subreddit of your choice.
+
+4. Input Reddit credentials
+    * Fill in the `reddit` parameters including `client_id`, `client_secret`, and `user_agent`.
+
+5. Execute file
+    * Run `python monitor.py`
